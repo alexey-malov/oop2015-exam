@@ -1,9 +1,9 @@
-#include <string>
+п»ї#include <string>
 #include <vector>
 
 
-// Выполняет замену элементов в диапазоне, заданном итераторами [first, last),
-// для которых унарная функция predicate возвращает true на newValue
+// Р’С‹РїРѕР»РЅСЏРµС‚ Р·Р°РјРµРЅСѓ СЌР»РµРјРµРЅС‚РѕРІ РІ РґРёР°РїР°Р·РѕРЅРµ, Р·Р°РґР°РЅРЅРѕРј РёС‚РµСЂР°С‚РѕСЂР°РјРё [first, last),
+// РґР»СЏ РєРѕС‚РѕСЂС‹С… СѓРЅР°СЂРЅР°СЏ С„СѓРЅРєС†РёСЏ predicate РІРѕР·РІСЂР°С‰Р°РµС‚ true РЅР° newValue
 template < ? ? ? >
 void ReplaceIf(first, last, predicate, newValue)
 {
@@ -13,14 +13,14 @@ void ReplaceIf(first, last, predicate, newValue)
 int main()
 {
 	int items[] = { 1, 2, 3,-4, 5, 2, 3 };
-	// Заменяет все элементы, меньшие 0 на 0
+	// Р—Р°РјРµРЅСЏРµС‚ РІСЃРµ СЌР»РµРјРµРЅС‚С‹, РјРµРЅСЊС€РёРµ 0 РЅР° 0
 	ReplaceIf(std::begin(items), std::end(items), [](const int& x) { return x < 0; }, 0);
-	/* Вывести items в stdout */
+	/* Р’С‹РІРµСЃС‚Рё items РІ stdout */
 
 	std::vector<std::string> strings = { "One", "Two", "Three", "Four", "Five", "", "Seven" };
-	// Заменяет все пустые строки на "Empty"
+	// Р—Р°РјРµРЅСЏРµС‚ РІСЃРµ РїСѓСЃС‚С‹Рµ СЃС‚СЂРѕРєРё РЅР° "Empty"
 	ReplaceIf(strings.begin(), strings.end(), [](const std::string& str) { return str.empty(); }, "Empty");
-	/* Вывести items в stdout */
+	/* Р’С‹РІРµСЃС‚Рё items РІ stdout */
 
 	return 0;
 }
