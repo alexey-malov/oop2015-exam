@@ -1,4 +1,6 @@
 ﻿#include <string>
+#include <cassert>
+#include <iostream>
 
 using namespace std;
 
@@ -18,7 +20,7 @@ public:
 
 	~CStringList()
 	{
-		// Написать недостающий код
+		// Написать недостающий код (деструктор не должен приводить к переполнению стека)
 	}
 
 	CStringList& operator=(const CStringList &list)
@@ -40,7 +42,7 @@ public:
 
 	// Возвращает первый элемент списка. Бросает logic_error, если список пуст
 	// Время выполнения: O(1)
-	string GetFront()const
+	const string& GetFront()const
 	{
 		// Написать недостающий код
 	}
@@ -65,5 +67,22 @@ private:
 
 int main()
 {
+	CStringList lst;
+	lst.AddToBegin("one");
+	lst.AddToBegin("two");
+	lst.AddToBegin("three");
+	assert(lst.GetSize() == 3);
+	assert(lst.GetFront() == "three");
+
+	CStringList lst1(lst);
+	lst1.PrintElements(cout); // Должно быть выведено: three two one (по одному слову в каждой строке)
+
+	lst1.AddToBegin("four");
+	lst.PrintElements(cout); // Должно быть выведено: three two one (по одному слову в каждой строке)
+
+	CStringList lst2;
+	lst2 = lst1;
+	lst2.PrintElements(cout); // Должно быть выведено: four three two one (по одному слову в каждой строке)
+
 	return 0;
 }
