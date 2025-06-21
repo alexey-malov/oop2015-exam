@@ -69,4 +69,7 @@ int main()
 	{
 		shape.Draw(std::cout);
 	}
+
+	// Теперь shapesCopy содержит копии фигур из shapes
+	auto shapesCopy = shapes;
 }
