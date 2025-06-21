@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CF1840C1-2385-4A2C-BE26-CC1F5F7B863B}</ProjectGuid>
+    <ProjectGuid>{FD7B36F6-496A-4A72-A223-0E8F20DF9F71}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Task01</RootNamespace>
+    <RootNamespace>Task05</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CountIf</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FD7B36F6-496A-4A72-A223-0E8F20DF9F71}</ProjectGuid>
+    <ProjectGuid>{B74409A4-CBEA-4EEB-BF26-23448F07A228}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Task05</RootNamespace>
+    <RootNamespace>Task04</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>WordMaker</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
