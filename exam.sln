@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "svg", "svg\svg.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sub_words", "sub_words\sub_words.vcxproj", "{74B61993-7890-44B7-9466-6A4E29D8D46F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShapesStrategy", "ShapesStrategy\ShapesStrategy.vcxproj", "{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{74B61993-7890-44B7-9466-6A4E29D8D46F}.Release|x64.Build.0 = Release|x64
 		{74B61993-7890-44B7-9466-6A4E29D8D46F}.Release|x86.ActiveCfg = Release|Win32
 		{74B61993-7890-44B7-9466-6A4E29D8D46F}.Release|x86.Build.0 = Release|Win32
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Debug|x64.ActiveCfg = Debug|x64
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Debug|x64.Build.0 = Debug|x64
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Debug|x86.ActiveCfg = Debug|Win32
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Debug|x86.Build.0 = Debug|Win32
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Release|x64.ActiveCfg = Release|x64
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Release|x64.Build.0 = Release|x64
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Release|x86.ActiveCfg = Release|Win32
+		{BA5B4D7B-B30C-408D-8FE1-CCBF3EC2DD18}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

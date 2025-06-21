@@ -22,6 +22,8 @@ std::ostream& operator<<(std::ostream& out, const Person& p)
 class PersonRepository
 {
 public:
+	// Для класса должны быть разработаны конструкторы копирования, перемещения и операторы присваивания
+
 	// Добавляет человека в коллекцию
 	void AddPerson(Person p)
 	{
